@@ -1,0 +1,26 @@
+.card__trash {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  outline: 0px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 19px;
+  width: 18px;
+  z-index: 3;
+  text-align: center;
+  display: block;
+  object-fit: contain;
+  background: url(../../../images/Trash.svg);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center center;
+}
+
+.card__trash:hover {
+  opacity: 0.5;
+  transition: opacity linear 0.5s;
+}

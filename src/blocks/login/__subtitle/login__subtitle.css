@@ -1,0 +1,13 @@
+.login__subtitle {
+    margin: 15px 0 0 0;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  
+  .login__subtitle-link {
+    text-decoration: none;
+    color: var(--main-color);
+  }

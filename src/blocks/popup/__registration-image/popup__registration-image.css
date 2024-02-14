@@ -1,0 +1,12 @@
+.popup__registration-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 32px;
+    background-image: url(../../../images/successful.svg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .popup__registration-image_type_error {
+    background-image: url(../../../images/error.svg);
+  }

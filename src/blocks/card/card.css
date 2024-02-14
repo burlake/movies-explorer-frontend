@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  height: 361px;
+  max-width: 282px;
+  object-fit: contain;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 1s linear 0.3s;
+}

@@ -1,0 +1,15 @@
+.header__link {
+    margin-top: 6px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.21;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .header__link {
+      margin-right: calc(30/320*100%);
+      margin-top: calc(6/320*100%);
+    }
+  }

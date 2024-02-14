@@ -1,0 +1,25 @@
+.error-message{
+    margin: 0;
+    padding: 0 0 10px 0;
+    width: 100%;
+    min-height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    opacity: 1;
+    transition: all 0.1s ease;
+  }
+
+  .error-message.error-message_visible{
+    opacity: 1;
+  }
+  
+  @media (max-width: 320px){
+    .error-message{
+      min-height: 100%;
+      padding: 0px;
+      }
+  }

@@ -1,0 +1,30 @@
+.profile__pen-button {
+    border: none;
+    background-image: url(../../../images/penforavatar.svg);
+    background-origin: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    left: -120px;
+    top: 0px;
+    height: 120px;
+    width: 120px;
+    z-index: 3;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  
+  }
+  
+  @media screen and (max-width: 800px) {
+    .profile__pen-button {
+      left: 81px;
+      top: -120px;
+    }
+  }
+  
+  .profile__pen-button:hover {
+    opacity: 1;
+    cursor: pointer; 
+    
+  }

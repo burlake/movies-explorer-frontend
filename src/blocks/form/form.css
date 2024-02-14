@@ -1,0 +1,11 @@
+.form {
+    max-width: 358px;
+    display: grid;
+    grid-template-rows: 37px;
+}
+  
+  @media screen and (max-width: 620px) {
+    .form {
+      max-width: 238px;
+    }
+  }

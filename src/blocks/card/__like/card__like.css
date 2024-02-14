@@ -1,0 +1,37 @@
+.card__like {
+  min-height: 19px;
+  max-width: 22px;
+  object-fit: contain;
+  border: none;
+  background: url(../../../images/like.svg);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center center;
+  background-size: 22px;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.card__like:hover {
+  opacity: 0.5;
+  transition: opacity linear 0.5s;
+}
+
+.card__like_active {
+  background-image: url(../../../images/like-act.svg);
+  background-size: 100%;
+  min-height: 22px;
+  opacity: 1;
+}
+
+.card__number-of-likes{
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  user-select: none;
+  position: absolute;
+  left: 90%;
+  top: 77%;
+  transform: translate(-80%, -50%);
+  color: #292d34;
+}

@@ -1,0 +1,9 @@
+.card__container {
+    position: relative;
+    padding: 25px 20px 24px 21px;
+    background: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  

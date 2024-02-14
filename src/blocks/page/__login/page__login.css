@@ -1,0 +1,13 @@
+.page__login {
+    max-width: 358px;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .page__login {
+      max-width: 260px;
+      padding-top: 40px;
+    }
+  }

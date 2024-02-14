@@ -1,0 +1,18 @@
+.login__error {
+    display: block;
+    color: #FF0000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    min-height: 29.04px;
+  }
+  
+  .login__error:last-of-type {
+    margin-bottom: 175px;
+  }
+  
+  @media screen and (max-width:550px) {
+    .login__error:last-of-type {
+      margin-bottom: 143px;
+    }
+  }

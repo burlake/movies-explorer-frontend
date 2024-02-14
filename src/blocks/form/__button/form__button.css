@@ -1,0 +1,51 @@
+.form__button {
+  padding: 0;
+  border: none;
+  margin: 0px;
+  width: 100%;
+  min-height: 50px;
+  background: #000000;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .form__button {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    min-height: 46px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.form__button:hover {
+  opacity: 0.8;
+  transition: opacity linear 0.5s;
+}
+
+
+.form__button_disabled {
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #000000;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+  .form__button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+

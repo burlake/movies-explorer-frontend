@@ -1,0 +1,23 @@
+.form__subtitle {
+  margin: 0px;
+  width: 100%;
+  min-height: 27px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.form__subtitle:active{
+  border-bottom:1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form__subtitle.form__subtitle__invalid {
+  border-bottom: 1px solid #FF0000;
+}
