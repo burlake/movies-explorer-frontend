@@ -1,7 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import './Error.css'
 
-//в "песочнице" работает
 
 export default function Error() {
   const navigate = useNavigate()

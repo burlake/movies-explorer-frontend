@@ -1,53 +1,78 @@
-import Card from "../Card/Card.jsx";
-import { useContext } from "react";
-import CurrentUserContext from "../../contexts/CurrentUserContext.js";
-import Register from "../Register/Register.jsx"
-import Login from "../Login/Login.jsx"
+import logo from "../../images/logo.svg";
+import { Link } from 'react-router-dom';
+import { useCallback, useState } from 'react';
+import './Main'
 
-function Main({ cards, onEditProfile, onEditAvatar, onAddPlace, onTrashButton, onImageCard, onCardLike, handleLogin, handleRegister, name }) {
 
-  const currentUser = useContext(CurrentUserContext)
+function Main({ name, dataUser }) {
+  //const [count, setCount] = useState(0)
+
+//   const closeBurgerForResize = useCallback(() => {
+//     if (document.documentElement.clientWidth > '767') {
+//       setCount(0)
+//       window.removeEventListener('resize', closeBurgerForResize)
+//     }
+//   }, [])
+
+//   function handelClick() {
+//     if (count === 0) {
+//       setCount(1)
+//       window.addEventListener('resize', closeBurgerForResize)
+//     } else {
+//       setCount(0)
+//       window.removeEventListener('resize', closeBurgerForResize)
+//     }
+//   }
+
+//   function onSignOut() {
+//     setCount(0);
+//     localStorage.removeItem('jwt')
+//   }
 
   return (
-    <main className='main'>
-      
-      {name === 'main' ?
-        <>
-          <section className="profile">
-            <img className="profile__photo" src={currentUser.avatar} alt="Аватар автора профайла."/>
-            <button className="profile__pen-button" onClick={onEditAvatar} />
-            <div className="profile__info">
-              <h1 className="profile__name">{currentUser.name}</h1>
-              <button className="profile__edit-button" type="button" aria-label="Редактировать" onClick={onEditProfile}/>
-              <p className="profile__description">{currentUser.about}</p>
+    <div className="page">
+        <header className={`header page__header`}>
+          <a href="#" class="brand"><img src={logo} alt="логотип " className="header__logo"/></a>
+            {/* {name === 'signup' || name === 'signin' ?
+            <Link to={name === 'signup' ? '/sign-in' : '/sign-up'} className="header__link">
+                {name !== 'signup' ? 'Регистрация' : 'Войти'}
+            </Link>
+            :
+            <> */}
+            <div>
+              {/* <div className='header__text-container'>
+                <p className='header__text'>Фильмы</p>
+                <p className='header__text'>Сохранённые фильмы</p>
+                <p className='header__text'>Аккаунт</p>
+                <div className='header__account'>
+                  <img src={logoAccount} alt="аккаунт " className="header__logo_account"/>
+                </div>
+              </div> */}
+              <div className='header__text-container'>
+                <p className='header__text'>Регистрация</p>
+                <Link to={`/sign-in`} className='header__unlogin'>Войти</Link>
+              </div>
             </div>
-            <button className="profile__add-button" type="button" aria-label="Добавить" onClick={onAddPlace}/>
-          </section>
-          
-          <section>
-            <div className="gallery">
-              {cards.map((data) => {
-                return (
-                  <Card
-                    key={data._id}
-                    card={data}
-                    onImageCard={onImageCard}
-                    onTrashButton={onTrashButton}
-                    onCardLike = {onCardLike}
-                  />
-                );
-              })}
-            </div>
-          </section>
-        </>
-        :
-        name === 'signup' ?
-          <Register handleRegister={handleRegister}/>
-          :
-          <Login handleLogin={handleLogin}/>
-      }
-    </main>
-  );
+            <button className={`header__button 'header__button_active' : ''}`} ></button>
+
+
+
+
+        </header>
+    </div>
+
+// function Header() {
+//   return (
+//     <header className="header">
+//       <img className="logo" src={logo} alt="Логотип сайта Место." />
+//     </header>
+//   );
+// }
+
+// export default Header;
+
+
+  )
 }
 
 export default Main;
