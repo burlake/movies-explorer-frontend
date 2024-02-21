@@ -1,7 +1,5 @@
 import logo from "../../images/logo.svg";
-import logoAccount from "../../images/logo_account.svg";
 import { Link } from 'react-router-dom';
-import { useCallback, useState } from 'react';
 import './Heder.css'
 
 
@@ -54,11 +52,6 @@ function Header({ name, dataUser }) {
                 <Link to={`/sign-in`} className='header__unlogin'>Войти</Link>
               </div>
             </div>
-            <button className={`header__button 'header__button_active' : ''}`} ></button>
-
-
-
-
         </header>
     </div>
 

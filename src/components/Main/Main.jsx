@@ -1,8 +1,5 @@
-import logo from "../../images/logo.svg";
-import { Link } from 'react-router-dom';
-import { useCallback, useState } from 'react';
-import './Main'
-
+import webWorldLogo from "../../images/web_world.svg";
+import './Main.css'
 
 function Main({ name, dataUser }) {
   //const [count, setCount] = useState(0)
@@ -30,36 +27,15 @@ function Main({ name, dataUser }) {
 //   }
 
   return (
-    <div className="page">
-        <header className={`header page__header`}>
-          <a href="#" class="brand"><img src={logo} alt="логотип " className="header__logo"/></a>
-            {/* {name === 'signup' || name === 'signin' ?
-            <Link to={name === 'signup' ? '/sign-in' : '/sign-up'} className="header__link">
-                {name !== 'signup' ? 'Регистрация' : 'Войти'}
-            </Link>
-            :
-            <> */}
-            <div>
-              {/* <div className='header__text-container'>
-                <p className='header__text'>Фильмы</p>
-                <p className='header__text'>Сохранённые фильмы</p>
-                <p className='header__text'>Аккаунт</p>
-                <div className='header__account'>
-                  <img src={logoAccount} alt="аккаунт " className="header__logo_account"/>
-                </div>
-              </div> */}
-              <div className='header__text-container'>
-                <p className='header__text'>Регистрация</p>
-                <Link to={`/sign-in`} className='header__unlogin'>Войти</Link>
-              </div>
-            </div>
-            <button className={`header__button 'header__button_active' : ''}`} ></button>
-
-
-
-
-        </header>
+  <section className="header about page__about ">
+    <div className="about__container">
+      <h1 className="about__title">Учебный проект студента факультета Веб-разработки.</h1>
+      <p className="about__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</p>
+      <button smooth to='#aboutProject' className={`'about__button_active' about__link : ''}`} >Узнать больше</button>
+      <img class="about__main-illustration about__decorate" src={webWorldLogo} alt="Картина"></img>
     </div>
+    <div className="about__decorate"></div>
+  </section>
 
 // function Header() {
 //   return (
