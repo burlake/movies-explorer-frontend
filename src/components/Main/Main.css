@@ -1,6 +1,8 @@
 @import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts/fonts.css);
 
+/* MAIN - about - часть об учебном проекте */
+
 .page__about {
   display: flex;
   justify-content: space-between;
@@ -23,9 +25,9 @@
 }
 
 .about__container {
+  margin-left: 70px;
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
   width: calc(640/1280*100%);
 }
 
@@ -44,47 +46,47 @@
 }
 
 .about__title {
-  margin: 0 0 36px 0;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 58px;
   color: #FFFFFF;
+  margin: 0 0 36px 0;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
 }
 
 @media screen and (max-width:1023px) {
   .about__title {
     text-align: center;
     margin-bottom: 22px;
-    font-size: 40px;
     font-weight: 400;
+    font-size: 40px;
     line-height: 50px;
   }
 }
 
 @media screen and (max-width:767px) {
   .about__title {
-    font-size: 30px;
     font-weight: 400;
+    font-size: 30px;
     line-height: 38px;
     letter-spacing: -1.2px;
   }
 }
 
 .about__subtitle {
+  color: rgba(255, 255, 255, .5);
   margin: 0;
   margin-bottom: 146px;
   max-width: 310px;
-  font-size: 13px;
   font-weight: 400;
+  font-size: 13px;
   line-height: normal;
-  color: rgba(255, 255, 255, .5)
 }
 
 @media screen and (max-width:1023px) {
   .about__subtitle {
-    text-align: center;
     margin-bottom: 92px;
     max-width: 260px;
+    text-align: center;
   }
 }
 
@@ -98,6 +100,7 @@
   display: block;
   border-radius: 3px;
   border: 1px solid #FFFFFF;
+  color: #FFFFFF;
   width: 129px;
   min-height: 36px;
   padding-top: 10px;
@@ -108,7 +111,6 @@
   font-weight: 500;
   line-height: 16px;
   background-color: transparent;
-  color: #FFFFFF;;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -134,24 +136,27 @@
 }
 
 .about__decorate {
-  width: 310px;
   height: 304px;
+  width: 310px;
   margin-right: 70px;
   background-size: cover;
 }
 
 @media screen and (max-width:1023px) {
   .about__decorate {
-    order: -1;
     margin-right: 0;
     margin-bottom: 48px;
+    order: -1;
   }
 }
 
 @media screen and (max-width:767px) {
   .about__decorate {
-    width: calc(210px + (310 - 210)*((100vw - 320px)/(768 - 320)));
     height: calc(206px + (304 - 206)*((100vw - 320px)/(768 - 320)));
+    width: calc(210px + (310 - 210)*((100vw - 320px)/(768 - 320)));
     margin-bottom: 44px;
   }
 }
+
+/* MAIN - about - часть о проекте */
+
