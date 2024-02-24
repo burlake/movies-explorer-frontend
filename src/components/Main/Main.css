@@ -151,7 +151,7 @@
   }
 }
 
-/* MAIN - about - часть о проекте */
+/* MAIN - project - часть о проекте */
 
 .page__project {
   padding: 110px 70px;
@@ -326,6 +326,331 @@
   }
 }
 
+/* MAIN - technologies - часть о проекте */
 
+.page__technologies {
+  width: (1280-70-70)px;
+  padding: 100px 70px;
+  background-color: #272727; 
+}
 
+@media screen and (max-width: 1023px) {
+  .page__technologies {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .page__technologies {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.technologies__title {
+  margin: 0 0 90px 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DADADA;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26.63px;
+  letter-spacing: -0.88px;
+  color:#FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .technologies__title {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .technologies__title {
+    padding-bottom: 28px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+}
+
+.technologies__subtitle {
+  margin: 0 0 26px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .technologies__subtitle {
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .technologies__subtitle {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -1.2px;
+  }
+}
+
+.technologies__description {
+  margin: 0 auto 100px;
+  text-align: center;
+  max-width: calc(460/1140*100%);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .technologies__description {
+    margin-bottom: 83px;
+    max-width: calc(460/768*100%);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .technologies__description {
+    margin-bottom: 50px;
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.44px;
+  }
+}
+
+.technologies__lists {
+  list-style-type: none;
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90px);
+  gap: 10px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .technologies__lists {
+    max-width: 648px;
+    grid-template-columns: repeat(auto-fit, 84px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .technologies__lists {
+    max-width: calc(178/284*100%);
+    grid-template-columns: repeat(auto-fit, 84px);
+  }
+}
+
+.technologies__list {
+  padding: 21px 0;
+  border-radius: 10px;
+  background-color: #303030;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .technologies__list {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+}
+
+/* MAIN - student - часть о проекте */
+
+.page__student {
+  padding: 110px 0 101px;
+  width: (1280-70-70)px;
+  padding: 100px 70px;
+  background-color: #272727; 
+}
+
+@media screen and (max-width: 1023px) {
+  .page__student {
+    padding-top: 90px;
+    padding-bottom: 91px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page__student {
+    padding-top: 71px;
+    padding-bottom: 70px;
+  }
+}
+
+.student__title {
+  margin: 9px 0 66px 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DADADA;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26.63px;
+  letter-spacing: -0.88px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .student__title {
+    margin-bottom: 60px;
+    padding-bottom: 28px;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+}
+
+.student__container {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: minmax(0, 600px) 270px;
+
+}
+
+@media screen and (max-width: 1023px) {
+  .student__container {
+    grid-template-columns: minmax(0, 367px) 255px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .student__container {
+    justify-content: center;
+    grid-template-columns: minmax(284px, auto);
+    row-gap: 38px;
+  }
+}
+
+.student__name {
+  margin: 0 0 18px 0;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .student__name {
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .student__name {
+    margin-bottom: 18px;
+    font-size: 30px;
+    letter-spacing: -1.2px;
+  }
+}
+
+.student__job {
+  margin: 0 0 26px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .student__job {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .student__job {
+    margin-bottom: 20px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.student__description {
+  margin: 0 0 99px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .student__description {
+    margin-bottom: 86px;
+    font-size: 12px;
+    line-height: 18px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .student__description {
+    margin-bottom: 39px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.student__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  color: #FFFFFF;
+  transition: opacity .3s linear;
+}
+
+.student__image {
+  display: block;
+  width: 270px;
+  height: 327px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .student__image {
+    width: 255px;
+    height: 307px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .student__image:first-of-type {
+    width: 284px;
+    height: 352px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .student__link:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}
