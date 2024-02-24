@@ -103,7 +103,7 @@
   color: #FFFFFF;
   width: 129px;
   min-height: 36px;
-  padding-top: 10px;
+  padding-top: 3px;
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
@@ -131,19 +131,12 @@
   z-index: 1;
   position: absolute;
   top: 149px;
-  left: 865px;
+  left: 900px;
   object-fit: cover;
 }
 
-.about__decorate {
-  height: 304px;
-  width: 310px;
-  margin-right: 70px;
-  background-size: cover;
-}
-
 @media screen and (max-width:1023px) {
-  .about__decorate {
+  .about__main-illustration {
     margin-right: 0;
     margin-bottom: 48px;
     order: -1;
@@ -151,7 +144,7 @@
 }
 
 @media screen and (max-width:767px) {
-  .about__decorate {
+  .about__main-illustration {
     height: calc(206px + (304 - 206)*((100vw - 320px)/(768 - 320)));
     width: calc(210px + (310 - 210)*((100vw - 320px)/(768 - 320)));
     margin-bottom: 44px;
@@ -161,7 +154,7 @@
 /* MAIN - about - часть о проекте */
 
 .page__project {
-  padding: 110px 0;
+  padding: 110px 70px;
 }
 
 @media screen and (max-width: 1023px) {

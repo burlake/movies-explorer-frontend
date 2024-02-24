@@ -30,7 +30,7 @@ function Main({ name, dataUser }) {
     <>
       <section className="header about page__about ">
     <div className="about__container">
-      <h1 className="about__title">Учебный проект студента факультета Веб-разработки.</h1>
+      <h1 className="about__title">Учебный проект студента факультета Веб&#x2011;разработки.</h1>
       <p className="about__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</p>
       <button smooth to='#aboutProject' className={`'about__button_active' about__link : ''}`} >Узнать больше</button>
       <img class="about__main-illustration about__decorate" src={webWorldLogo} alt="Картина"></img>
