@@ -1,5 +1,6 @@
 import webWorldLogo from "../../images/web_world.svg";
 import photo from "../../images/photo.svg";
+import arrow from "../../images/arrow.svg";
 import './Main.css';
 
 function Main({ name, dataUser }) {
@@ -75,10 +76,37 @@ function Main({ name, dataUser }) {
           <p className="student__job">Фронтенд-разработчик, 30 лет</p>
           <p className="student__description">Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании "СКБ Контур". После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
           <a className="student__link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a>
-          </div>
-          <img src={photo} alt="фото студента" className="student__image" />
         </div>
+        <img src={photo} alt="фото студента" className="student__image" />
+      </div>
     </section>
+    
+    <section className="portfolio page__portfolio">
+      <h2 className="portfolio__title">Портфолио</h2>
+      <nav class="portfolio__menu">
+        <ul className="portfolio__links">
+          <li className="portfolio__layout">
+            <a className="portfolio__link" href="https://burlake.github.io/how-to-learn-project/" target="_blank" rel="noopener noreferrer">Статичный сайт
+              <button className="portfolio__arrow" type="button" src={arrow}></button>
+            </a>
+          </li>
+          <li className="portfolio__layout">
+            <a className="portfolio__link" href="https://burlake.github.io/russian-travel/" target="_blank" rel="noopener noreferrer">Адаптивный сайт
+              <button className="portfolio__arrow" type="button" src={arrow}></button>
+            </a>
+          </li>
+          <li className="portfolio__layout">
+            <a className="portfolio__link" href="https://burlake.github.io/mesto-react/" target="_blank" rel="noopener noreferrer">Одностраничное приложение
+              <button className="portfolio__arrow" type="button" src={arrow}></button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+        
+      
+
+  </section>
 
 
   </>
