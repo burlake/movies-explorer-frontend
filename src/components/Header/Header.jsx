@@ -1,6 +1,6 @@
 import logo from "../../images/logo.svg";
 import logoAccount from "../../images/logo_account.svg";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Heder.css'
 
 
@@ -34,18 +34,18 @@ function Header({ name, dataUser }) {
         <header className={`header page__header`}>
           <a href="#" class="brand"><img src={logo} alt="логотип " className="header__logo"/></a>
             <div>
-              <div className='header__text-container'>
+              {/* <div className='header__text-container'>
                 <p className='header__text'>Фильмы</p>
                 <p className='header__text'>Сохранённые фильмы</p>
                 <p className='header__text'>Аккаунт</p>
                 <div className='header__account'>
                   <img src={logoAccount} alt="аккаунт " className="header__logo_account"/>
                 </div>
-              </div>
-              {/* <div className='header__text-container'>
+              </div> */}
+              <div className='header__text-container'>
                 <p className='header__text'>Регистрация</p>
                 <Link to={`/sign-in`} className='header__unlogin'>Войти</Link>
-              </div> */}
+              </div>
             </div>
         </header>
     </div>

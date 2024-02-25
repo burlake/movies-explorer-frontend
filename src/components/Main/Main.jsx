@@ -1,4 +1,3 @@
-import webWorldLogo from "../../images/web_world.svg";
 import photo from "../../images/photo.svg";
 import arrow from "../../images/arrow.svg";
 import './Main.css';
@@ -30,12 +29,12 @@ function Main({ name, dataUser }) {
 
   return (
   <>
-    <section className="header about page__about ">
+    <section className="about page__about ">
       <div className="about__container">
         <h1 className="about__title">Учебный проект студента факультета Веб&#x2011;разработки.</h1>
         <p className="about__subtitle">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</p>
         <button smooth to='#aboutProject' className={`'about__button_active' about__link : ''}`} >Узнать больше</button>
-        <img class="about__main-illustration about__decorate" src={webWorldLogo} alt="Картина"></img>
+        <div class="about__main-illustration about__decorate"></div>
       </div>
       <div className="about__decorate"></div>
     </section>

@@ -4,10 +4,13 @@
 /* MAIN - about - часть об учебном проекте */
 
 .page__about {
-  display: flex;
-  justify-content: space-between;
+  /* display: grid;
+  justify-content: space-between; */
   padding: 75px 0;
   background-color: #073042;
+  display: grid;
+  width: 100%;
+margin: 0 auto;
 }
 
 @media screen and (max-width:1023px) {
@@ -25,41 +28,64 @@
 }
 
 .about__container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   margin-left: 70px;
-  display: flex;
-  flex-direction: column;
-  width: calc(640/1280*100%);
+  display: grid;
+
+  grid-template-areas:
+  "A A A A   D D D"
+  "B B B B   D D D"
+  "C C C C   D D D";
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1226px) {
   .about__container {
     margin-left: 0;
-    align-items: center;
+    place-items: center;
+    padding-left: 64px;
     width: calc(680/768*100%);
+    grid-template-areas:
+    "D D D D"
+    "A A A A"
+    "B B B B"
+    "C C C C";
   }
 }
 
 @media screen and (max-width:767px) {
   .about__container {
-    width: calc(300/320*100%);
+    width: 680px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .about__container {
+    width: 320px;
+    padding-left: 0px;
+    column-gap: 0px;
   }
 }
 
 .about__title {
   color: #FFFFFF;
-  margin: 0 0 36px 0;
+  margin: 0 100px 36px 0;
   font-weight: 400;
   font-size: 50px;
   line-height: 58px;
+  width: 640px;
+  grid-area: A;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1226px) {
   .about__title {
     text-align: center;
     margin-bottom: 22px;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
+    margin: 0 0 36px 0;
   }
 }
 
@@ -72,6 +98,13 @@
   }
 }
 
+@media screen and (max-width:320px) {
+  .about__title {
+    width: 300px;
+    margin: 0 0 36px 0;
+  }
+}
+
 .about__subtitle {
   color: rgba(255, 255, 255, .5);
   margin: 0;
@@ -80,6 +113,8 @@
   font-weight: 400;
   font-size: 13px;
   line-height: normal;
+
+  grid-area: B;
 }
 
 @media screen and (max-width:1023px) {
@@ -93,6 +128,12 @@
 @media screen and (max-width:767px) {
   .about__subtitle {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .about__subtitle {
+    width: 300px;
   }
 }
 
@@ -111,6 +152,8 @@
   font-weight: 500;
   line-height: 16px;
   background-color: transparent;
+
+  grid-area: C;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -128,11 +171,11 @@
 .about__main-illustration {
   height: 304px;
   width: 310px;
-  z-index: 1;
-  position: absolute;
-  top: 149px;
-  left: 900px;
+  z-index: 6;
+  position: relative;
   object-fit: cover;
+  background-image: url(../../images/web_world.svg);
+  grid-area: D;
 }
 
 @media screen and (max-width:1023px) {
@@ -143,11 +186,10 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:320px) {
   .about__main-illustration {
-    height: calc(206px + (304 - 206)*((100vw - 320px)/(768 - 320)));
-    width: calc(210px + (310 - 210)*((100vw - 320px)/(768 - 320)));
-    margin-bottom: 44px;
+    height: 206px;
+    width: 210px;
   }
 }
 
@@ -159,8 +201,7 @@
 
 @media screen and (max-width: 1023px) {
   .page__project {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 50px;
   }
 }
 
@@ -336,8 +377,7 @@
 
 @media screen and (max-width: 1023px) {
   .page__technologies {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 50px;
   }
 }
 
@@ -487,8 +527,7 @@
 
 @media screen and (max-width: 1023px) {
   .page__student {
-    padding-top: 90px;
-    padding-bottom: 91px;
+    padding: 81px 50px;
   }
 }
 
@@ -665,13 +704,19 @@
 
 @media screen and (max-width: 1023px) {
   .page__portfolio {
-    padding-bottom: 69px;
+    padding: 8px 70px 128.9px 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .page__portfolio {
     padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page__portfolio {
+    padding: 0px;
   }
 }
 
@@ -694,10 +739,29 @@
   width: 1140px;
 }
 
+@media screen and (max-width: 1025px) {
+  .portfolio__menu {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__menu {
+    width: 100%;
+  }
+}
+
 .portfolio__links{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 1140px;
+}
+
+@media screen and (max-width: 1220px) {
+  .portfolio__links {
+    width: 100%;
+  }
 }
 
 .portfolio__link {
@@ -719,12 +783,21 @@
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
   .portfolio__link {
     padding-bottom: 19px;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: -0.72px;
+    letter-spacing: -2.2px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .portfolio__link {
+    padding-bottom: 19px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -2.2px;
   }
 }
 
@@ -745,3 +818,28 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1023px) {
+  .portfolio__layout {
+    width: 668px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio__layout {
+    width: 568px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .portfolio__layout {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .portfolio__layout {
+    width: 292px;
+  }
+}
+
