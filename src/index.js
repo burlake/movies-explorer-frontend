@@ -3,17 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './components/App';
 import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+// import Main from './components/Main/Main';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
+import Search from './components/Search/Search';
+import Card from './components/Cards/Cards';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <Main />
+      {/* <Main /> */}
+      <Search />
+      {/* <Card /> */}
       <Footer />
     </BrowserRouter>
   // </React.StrictMode>
