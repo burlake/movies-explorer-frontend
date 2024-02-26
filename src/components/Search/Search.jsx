@@ -27,7 +27,7 @@ function Search({ isCheck, changeShort, firstEntrance }) {
         <div className="search__input-container">
           <input
             type="checkbox"
-            className="search__ckeck"
+            className="search__check"
             onChange={() => changeShort()}
             disabled={firstEntrance}
           />

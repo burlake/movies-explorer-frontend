@@ -1,6 +1,6 @@
 import logo from "../../images/logo.svg";
-import logoAccount from "../../images/logo_account.svg";
-import { Link } from 'react-router-dom';
+// import logoAccount from "../../images/logo_account.svg";
+// import { Link } from 'react-router-dom';
 import './Heder.css'
 
 
@@ -44,7 +44,7 @@ function Header({ name, dataUser }) {
               </div> */}
               <div className='header__text-container'>
                 <p className='header__text'>Регистрация</p>
-                <Link to={`/sign-in`} className='header__unlogin'>Войти</Link>
+                <button className='header__unlogin'>Войти</button>
               </div>
             </div>
         </header>
