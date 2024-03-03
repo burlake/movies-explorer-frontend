@@ -1,0 +1,134 @@
+.form {
+    max-width: 358px;
+    display: grid;
+    grid-template-rows: 37px;
+}
+  
+  @media screen and (max-width: 620px) {
+    .form {
+      max-width: 238px;
+    }
+  }
+
+  .form_disabled {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+  }
+
+  .form__subtitle {
+    margin: 0px;
+    width: 400px;
+    min-height: 27px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13.31px;
+    color: #ffffff;
+    text-align: right;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+  
+  }
+  
+  .form__subtitle:active{
+    border-bottom:1px solid  #4285F4;
+  }
+  
+  .form__subtitle.form__subtitle__invalid {
+    border-bottom: 1px solid #FF0000;
+  }
+  
+  .form__name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13.31px;
+    color: #ffffff;
+    width: 130px;
+  }
+  
+  
+  .search__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #424242;
+  }
+  
+  .search__container:last-of-type {
+    border-bottom: none;
+  }
+  
+  
+  
+  .exit_button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: #EE3465;
+    background-color: transparent;
+    position: relative;
+    top:100px;
+  }
+  
+
+  .form__button {
+    padding: 0;
+    border: none;
+    margin: 0px;
+    width: 100%;
+    min-height: 50px;
+    background: #11ffee00;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 320px) {
+    .form__button {
+      margin-top: 15px;
+      margin-bottom: 0px;
+      min-height: 46px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  
+  .form__button:hover {
+    opacity: 0.8;
+    transition: opacity linear 0.5s;
+  }
+  
+  
+  /* .form__button_disabled {
+    background: #000000;
+    border: 1px solid #00000016;
+    box-sizing: border-box;
+    color: #11ffee00;
+    opacity: 0.2;
+    cursor: not-allowed;
+  } */
+  
+  @media (max-width: 650px) {
+    .form__button {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  
+  
+  

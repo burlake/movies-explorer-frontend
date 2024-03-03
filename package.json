@@ -1,5 +1,5 @@
 {
-  "name": "mesto-react",
+  "name": "diplom",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-react-html-attrs": "^3.0.5",
     "gh-pages": "^6.0.0"
   }
 }
