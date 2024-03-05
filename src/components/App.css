@@ -53,9 +53,8 @@
   }
 
   .page__header {
-    width: calc(880/1280*100%);
+    
     margin: 0 auto;
-    border-bottom: 1px solid rgba(84, 84, 84, .7);
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;

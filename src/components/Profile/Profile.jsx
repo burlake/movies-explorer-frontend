@@ -4,6 +4,7 @@ import useFormValidation from "../../utils/useFormValidation.js";
 import { Link } from "react-router-dom";
 import Input from "../Input/Input.jsx";
 import "./profile.css"
+import Header from "../Header/Header.jsx";
 
 function EditProfilePopup({ open, onClose, onUpdateUser, setLoggedIn, }) {
   // const { values, errors, isInputValid, isValid, handleChange, reset } = useFormValidation()
@@ -82,24 +83,27 @@ function EditProfilePopup({ open, onClose, onUpdateUser, setLoggedIn, }) {
   //     Выйти из аккаутна
   //   </Link>
   // </section>
+  <>
+    {/* <Header/> */}
+      <section className="profile">
+          <form className="profile__form">
+            <h3 className="profile__greeting">Привет, Виталий!</h3>
+            <div className="profile__inputs">
+              <p className="profile__text">Имя</p>
+              <div className="profile__area profile__area_type_name">
+                <input className="profile__settings" defaultValue="Виталий" required />
+              </div>
+              <div className="profile__area profile__area_type_email">
+                <input className="profile__settings" defaultValue="pochta@pochta.ru" required />
+              </div>
+              <p className="profile__text">E-mail</p>
+            </div>
+            <Link to="/profile" className="profile__button">Редактировать</Link>
+            <Link to="/" className="profile__link">Выйти из аккаунта</Link>
+          </form>
+        </section>
+  </>
 
-  <section className="profile">
-      <form className="profile__form">
-        <h3 className="profile__greeting">Привет, Виталий!</h3>
-        <div className="profile__inputs">
-          <p className="profile__text">Имя</p>
-          <div className="profile__area profile__area_type_name">
-            <input className="profile__settings" defaultValue="Виталий" required />
-          </div>
-          <div className="profile__area profile__area_type_email">
-            <input className="profile__settings" defaultValue="pochta@pochta.ru" required />
-          </div>
-          <p className="profile__text">E-mail</p>
-        </div>
-        <Link to="/profile" className="profile__button">Редактировать</Link>
-        <Link to="/" className="profile__link">Выйти из аккаунта</Link>
-      </form>
-    </section>
   )
 }
 
