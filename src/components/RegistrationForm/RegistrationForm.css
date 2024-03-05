@@ -1,0 +1,11 @@
+.header__logo_form {
+    top: 70px;
+    left: 442px;
+}
+
+@media screen and (max-width: 472px) {
+    .header__logo_form {
+    margin-right: 50%;
+    margin-left: 43%;
+    }
+  }

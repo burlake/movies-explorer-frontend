@@ -16,6 +16,7 @@ export default function Register({ setLoggedIn }) {
 
   return (
     <RegistrationForm name='signup' onSubmit={onRegister} isValid={isValid}>
+      <p className="form__name">Имя</p>
       <Input
         name='name'
         type='text'
@@ -28,6 +29,7 @@ export default function Register({ setLoggedIn }) {
         minLength = '2'
         autocomplete="username"
       />
+      <p className="form__name">Email</p>
       <Input
         name='email'
         type='email'
@@ -38,6 +40,7 @@ export default function Register({ setLoggedIn }) {
         error={errors.email}
         autocomplete="email"
       />
+      <p className="form__name">Пароль</p>
       <Input
         name='password'
         type='password'
@@ -49,6 +52,7 @@ export default function Register({ setLoggedIn }) {
         error={errors.password}
         autocomplete="current-password"
       />
+      <p className="popup__error">Что-то пошло не так...</p>
     </RegistrationForm>
   )
 }

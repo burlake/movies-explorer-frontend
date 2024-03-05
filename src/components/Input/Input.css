@@ -48,10 +48,11 @@
   }
   
   .popup__error:last-of-type {
-    margin-bottom: 10px;
+    margin-bottom: -6px;
   }
   
   .login__error {
+    margin: 0px;
     display: block;
     color: #FF0000;
     font-weight: 400;

@@ -9,6 +9,7 @@ import { movies, savedMovies } from "../../utils/constants";
 import { useEffect, useState } from "react";
 import Search from "../Search/Search";
 import Card from "../Card/Card";
+import Profile from "../Profile/Profile";
 
 function Main({ name, setLoggedIn }) {
   const [moviesAll, setMoviesAll] = useState([]);
@@ -54,7 +55,7 @@ function Main({ name, setLoggedIn }) {
           signin: <Login setLoggedIn={setLoggedIn} />,
           signup: <Register setLoggedIn={setLoggedIn} />,
           error: <Error />,
-          profile: <Landing setLoggedIn={setLoggedIn} />,
+          profile: <Profile setLoggedIn={setLoggedIn} />,
           movies: (
             <>
               <Search

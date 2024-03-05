@@ -36,7 +36,7 @@ const [isOpen, setIsOpen] = useState(false)
     return (
     <div className="page">
       <header className={`header page__header`}>
-        <Link to={'/'} className="brand">
+        <Link to={'/'}>
           <img src={logo} alt="логотип " className="header__logo"/>
         </Link>
         

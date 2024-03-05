@@ -29,16 +29,26 @@
 
 
   .page__login {
-    max-width: 358px;
+    max-width: 396px;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 70px;
     margin: 0 auto;
+    margin-bottom: 70px;
+ 
   }
   
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 768px) {
+    .page__login {
+      padding-top: 232px;
+      margin-bottom: 130px;
+    }
+  }
+
+  @media screen and (max-width: 472px) {
     .page__login {
       max-width: 260px;
-      padding-top: 40px;
+      padding-top: 56px;
+      margin-bottom: 30px;
     }
   }
 
@@ -50,7 +60,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 45px;
     transition: padding-top .2s linear;
     flex-direction: row;
   }

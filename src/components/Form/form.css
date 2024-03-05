@@ -52,6 +52,11 @@
     line-height: 13.31px;
     color: #ffffff;
     width: 130px;
+    margin: 23px 0px 6px 0px;
+  }
+
+  .form__name:last-of-type{
+    margin-top: 25px;
   }
   
   

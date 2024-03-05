@@ -5,7 +5,7 @@ import "./login.css"
 import { Navigate } from 'react-router-dom';
 
 
-export default function Login({ setLoggedIn }) {
+export default function Login({ setLoggedIn, title }) {
   const { values, errors, isValid, isInputValid, handleChange, } = useFormValidation()
   
   function onLogin(evt) {
@@ -19,7 +19,8 @@ export default function Login({ setLoggedIn }) {
     <RegistrationForm name='signin' onSubmit={onLogin} isValid={isValid}>
       <div className="login_container">
       <p className="form__name">E-mail</p>
-              <Input
+        <Input
+        title='E-mail'
         name='email'
         type='email'
         placeholder={'Email'}
@@ -33,6 +34,7 @@ export default function Login({ setLoggedIn }) {
       <div className="login_container">
       <p className="form__name">Пароль</p>
       <Input
+        title='Пароль'
         name='password'
         type='password'
         placeholder={'Пароль'}

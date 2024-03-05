@@ -1,7 +1,7 @@
 .login__button {
     padding: 0;
     border: none;
-    margin: 0px;
+    margin: 114px 0px 0px 0px;
     width: 100%;
     min-height: 50px;
     background: #4285F4;
@@ -30,6 +30,15 @@
       pointer-events: none;
     }
 
+
+    @media screen and (max-width: 472px) {
+      .login__button {
+        margin: 200px 0px 0px 0px;
+      }
+    }
+
+
+
     .login__error {
         display: block;
         color: #FF0000;
@@ -41,6 +50,7 @@
       
       .login__error:last-of-type {
         margin-bottom: 1px;
+        margin-top: 5px;
       }
       
       @media screen and (max-width:550px) {
@@ -52,10 +62,10 @@
 
       .login__input {
         width: 100%;
-        padding: 0 0 13px 0;
+        padding: 0 0 8px 0;
         margin: 0;
         border: none;
-        border-bottom: 2px solid #CCCCCC;
+        border-bottom: 1px solid #424242;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.21;
@@ -66,6 +76,12 @@
         background: none;
     
       }
+
+      .login_container:last-of-type{
+        margin-bottom: 100px;
+      }
+
+
       
       .login__input_invalid {
         border-bottom: 2px solid #FF0000;
@@ -87,6 +103,14 @@
         line-height: 1.21;
       }
       
+      @media screen and (max-width: 472px) {
+        .login__subtitle{
+          font-size: 12px;
+        }
+      }
+
+
+
       .login__subtitle-link {
         text-decoration: none;
         color: #4285F4;
@@ -94,7 +118,7 @@
 
       .login__title {
         min-height: 28px;
-        margin: 0 0 50px;
+        margin: 37px 0 38px;
         font-weight: 500;
         font-size: 24px;
         line-height: 29.05px;
@@ -102,8 +126,10 @@
         color: white;
       }
       
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 472px) {
         .login__title {
-          margin-bottom: 40px;
+          margin-bottom: 80px;
+          margin-top: 47px;
+          text-align: center;
         }
       }

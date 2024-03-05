@@ -6,15 +6,15 @@ function EditAvatarPopup({open, onClose, onUpdateAvatar }) {
     const input = useRef()
     const {values, errors, isValid, isInputValid, handleChange, reset } = useFormValidation()
 
-    function resetForPopup() {
-        onClose()
-        reset ()
-    }
+    // function resetForPopup() {
+    //     onClose()
+    //     reset ()
+    // }
 
-    function handleSubmit (event) {
-        event.preventDefault()
-        onUpdateAvatar({avatar: input.current.value}, reset)
-    }
+    // function handleSubmit (event) {
+    //     event.preventDefault()
+    //     onUpdateAvatar({avatar: input.current.value}, reset)
+    // }
 
   return (
     <PopupWithForm //avatar
@@ -22,8 +22,6 @@ function EditAvatarPopup({open, onClose, onUpdateAvatar }) {
       title="Обновить аватар"
       formButton="Создать"
       open={open}
-      onClose={resetForPopup}
-      onSubmit={handleSubmit}
       isValid={isValid}
     >
       <input
