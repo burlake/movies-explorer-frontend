@@ -2,7 +2,6 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="page">
       <footer className="footer page__footer">
         <p className="footer__title">
           Учебный проект Яндекс.Практикум х BeatFilm.
@@ -29,7 +28,6 @@ function Footer() {
           </nav>
         </div>
       </footer>
-    </div>
   );
 }
 

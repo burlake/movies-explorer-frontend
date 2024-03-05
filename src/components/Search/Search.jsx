@@ -18,8 +18,8 @@ function Search() {
             </button>
           </div>
         </div>
-        <div>
-          <div className="search__input-container">
+        <div className="search__check">
+          <div className="search__check-container">
             {" "}
             {/*toggle switch */}
             <input type="checkbox" id="switch" />

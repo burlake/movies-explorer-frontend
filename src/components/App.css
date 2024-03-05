@@ -9,7 +9,6 @@
     margin: 0 auto;
     max-width: 1280px;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,9 +23,18 @@
     background-color: #202020;
   }
 
+  html {
+    height: 100%;
+  }
 
-
-
+  body {
+    margin: 0;
+    color: #fff;
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
 
   .page__login {
     max-width: 396px;
@@ -52,7 +60,7 @@
     }
   }
 
-  .page__header {
+  /* .page__header {
     
     margin: 0 auto;
     box-sizing: border-box;
@@ -72,7 +80,7 @@
   
   .page__header_opened {
     padding-top: 169px;
-  }
+  } */
 
   .page__container{
     margin: 0 auto;
@@ -80,3 +88,47 @@
     max-width: 1280px;
     height: 100%;
   }
+
+/* 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .content {
+    min-height: calc(100vh - 172px);
+  }
+
+  @media screen and (max-width: 350px) {
+    .content {
+      min-height: calc(100vh - 253px);
+    }
+  } */
+
+/* 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+  .content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+  }
+  .footer {
+    height: 80px;
+    margin-top: -80px;
+  } */

@@ -716,7 +716,7 @@ margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 323px) {
   .page__portfolio {
     padding: 0px;
   }
@@ -785,7 +785,7 @@ margin: 0 auto;
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 323px) {
   .portfolio__link {
     padding-bottom: 19px;
     font-size: 18px;
@@ -840,7 +840,7 @@ margin: 0 auto;
   }
 } */
 
-/* @media screen and (max-width: 320px) {
+/* @media screen and (max-width: 323px) {
   .portfolio__layout {
     width: 292px;
   }

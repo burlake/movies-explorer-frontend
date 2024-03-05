@@ -4,7 +4,6 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Error from "../Error - 404/Error";
 import SearchForm from "../Search/Search";
-import MoviesCardList from "../Card/Card";
 import { movies, savedMovies } from "../../utils/constants";
 import { useEffect, useState } from "react";
 import Search from "../Search/Search";
@@ -71,7 +70,7 @@ function Main({ name, setLoggedIn }) {
                 isCheck={isCheckMoviesSave}
                 changeShot={onCheckMoviesSave}
               />
-              <MoviesCardList movies={saveMovie} />
+              <Card movies={saveMovie} />
             </>
           ),
         }[name]

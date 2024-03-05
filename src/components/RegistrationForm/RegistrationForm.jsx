@@ -8,7 +8,7 @@ import logo from "../../images/logo.svg";
 export default function RegistrationForm({ name, children, isValid, onSubmit, title }) {
 
   return (
-    <section className="login page__login">
+    <section className="login page__login" name={name} onSubmit={onSubmit}>
       <Link to={'/'}>
         <img src={logo} alt="логотип " className="header__logo_form"/>
       </Link>
@@ -16,6 +16,7 @@ export default function RegistrationForm({ name, children, isValid, onSubmit, ti
       <p className="form__name">{title}</p>
       <Form
         name={name}
+        type="submit"
         titleButton={name === 'signup' ? 'Зарегистрироваться' : 'Войти'}
         children={children}
         isValid={isValid}

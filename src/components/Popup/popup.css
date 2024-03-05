@@ -286,7 +286,7 @@
   opacity: 1;
 }
 
-@media (max-width: 320px){
+@media (max-width: 323px){
   .error-message{
     min-height: 100%;
     padding: 0px;

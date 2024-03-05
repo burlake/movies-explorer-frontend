@@ -2,11 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Cards.css";
 
-function Card({
-  card,
-  movies,
-  buttonType,
-}) {
+function Card({ card, movies, buttonType }) {
   const [btnType, setBtnType] = useState(buttonType);
   const [count, setCount] = useState(printCards().init);
   const movie = movies.slice(0, count);
@@ -34,76 +30,84 @@ function Card({
   }
 
   return (
-    <section className="gallery">
-      {movie.map((data) => {
-        return (
-          <div
-            className="card"
-            key={data.id}
-            name={data.name}
-            src={data.image}
-            duration={data.duration}
-          >
-            <div className="card__container">
-              <h2 className="card__place">{data.name}</h2>
-              <p className="card__place">{data.duration}</p>
-            </div>
-            <Link target="_blank">
-              <img className="card__img" src={data.image} alt="Иллюстрация." />
-            </Link>
-            <button
-              className="card__like"
-              type="button"
-              onClick={() => {
-                changeBtnType(card);
-              }}
+    <>
+      <section className="gallery">
+        {movie.map((data) => {
+          return (
+            <div
+              className="card"
+              key={data.id}
+              name={data.name}
+              src={data.image}
+              duration={data.duration}
             >
-              {!btnType && "Сохранить"}
-              {btnType === "saved" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="29"
-                  fill="none"
-                >
-                  <rect width="100" height="29" fill="#313131" rx="14.5" />
-                  <path
-                    fill="#fff"
-                    fillRule="evenodd"
-                    d="m51.06 14.382 2.24-2.24-1.06-1.06-2.24 2.24-2.239-2.24-1.06 1.061 2.239 2.24-2.357 2.356 1.06 1.06L50 15.444l2.357 2.357 1.06-1.06-2.356-2.358Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              )}
-              {btnType === "searchSaved" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="29"
-                  fill="none"
-                >
-                  <rect width="100" height="29" fill="#EE3465" rx="14.5" />
-                  <path
-                    stroke="#fff"
-                    strokeWidth="1.5"
-                    d="M46 14.75 48.819 17 54 12.5"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
-        );
-      })}
-      <button
-        type="button"
-        className={`gallery__more ${
-          btnType >= movies.length && "gallery__more_hidden"
-        }`}
-        onClick={clickMore}
-      >
-        Ёще
-      </button>
-    </section>
+              <div className="card__container">
+                <h2 className="card__place">{data.name}</h2>
+                <p className="card__place">{data.duration}</p>
+              </div>
+              <Link target="_blank">
+                <img
+                  className="card__img"
+                  src={data.image}
+                  alt="Иллюстрация."
+                />
+              </Link>
+              <button
+                className="card__like"
+                type="button"
+                onClick={() => {
+                  changeBtnType(card);
+                }}
+              >
+                {!btnType && "Сохранить"}
+                {btnType === "saved" && (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100"
+                    height="29"
+                    fill="none"
+                  >
+                    <rect width="100" height="29" fill="#313131" rx="14.5" />
+                    <path
+                      fill="#fff"
+                      fillRule="evenodd"
+                      d="m51.06 14.382 2.24-2.24-1.06-1.06-2.24 2.24-2.239-2.24-1.06 1.061 2.239 2.24-2.357 2.356 1.06 1.06L50 15.444l2.357 2.357 1.06-1.06-2.356-2.358Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                )}
+                {btnType === "searchSaved" && (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100"
+                    height="29"
+                    fill="none"
+                  >
+                    <rect width="100" height="29" fill="#EE3465" rx="14.5" />
+                    <path
+                      stroke="#fff"
+                      strokeWidth="1.5"
+                      d="M46 14.75 48.819 17 54 12.5"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          );
+        })}
+        <div className="gallery__addition">
+          <button
+            type="button"
+            className={`gallery__addition_more ${
+              btnType >= movies.length && "gallery__more_hidden"
+            }`}
+            onClick={clickMore}
+          >
+            Ёще
+          </button>
+        </div>
+      </section>
+    </>
   );
 }
 

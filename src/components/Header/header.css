@@ -19,6 +19,14 @@
   } 
 }  
 
+@media screen and (max-width:320px) {
+  .page__header {
+    padding-left: 28px;
+    padding-right: 8px;
+  } 
+}  
+
+
 .page__header_type_page {
   background-color: transparent;
 }
