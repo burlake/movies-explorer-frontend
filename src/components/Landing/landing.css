@@ -173,7 +173,6 @@ margin: 0 auto;
 .about__main-illustration {
   height: 304px;
   width: 310px;
-  object-fit: cover;
   background-repeat: no-repeat;
   background-image: url(../../images/web_world.svg);
   background-size: cover;
@@ -670,7 +669,6 @@ margin: 0 auto;
   width: 270px;
   height: 327px;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 @media screen and (max-width: 1023px) {

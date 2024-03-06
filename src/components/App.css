@@ -36,6 +36,11 @@
     grid-template-rows: auto 1fr auto;
   }
 
+  img {
+    /* This inherits all CSS values including `overflow` */
+    all: inherit;
+    }
+    
   .page__login {
     max-width: 396px;
     width: 100%;

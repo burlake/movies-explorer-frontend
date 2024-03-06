@@ -194,7 +194,6 @@
   max-width: 360px;
   min-height: 200px;
   max-height: 200px;
-  object-fit: cover;
   cursor: pointer;
 }
 

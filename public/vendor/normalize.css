@@ -53,7 +53,7 @@ h1 {
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  /* overflow: visible; 2 */
 }
 
 /**
@@ -173,10 +173,10 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 
-button,
+/* button,
 input { /* 1 */
-  overflow: visible;
-}
+/* overflow: visible; 
+} */
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
