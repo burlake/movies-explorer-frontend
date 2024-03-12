@@ -29,7 +29,7 @@
 @media screen and (max-width: 320px) {
   .gallery {
     max-width: 282px;
-    grid-row-gap: 18px; 
+    grid-row-gap: 18px;
     padding: 38px 0 0 0;
     width: 300px;
     /* height: 168px; */
@@ -242,6 +242,15 @@
     margin-left: 32px;
     margin-top: 50px;
     margin-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .gallery__addition_more {
+    width: 300px;
+    /* margin-left: 32px;
+    margin-top: 50px;
+    margin-bottom: 88px; */
   }
 }
 
