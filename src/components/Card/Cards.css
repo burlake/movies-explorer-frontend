@@ -257,9 +257,7 @@
 @media screen and (max-width: 470px) {
   .gallery__addition_more {
     width: 300px;
-    margin-left: 0px;
-    margin-top: 78px;
-    margin-bottom: 78px;
+    margin: 78px 0px 78px 0px;
   }
 }
 

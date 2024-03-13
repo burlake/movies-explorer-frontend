@@ -95,7 +95,9 @@ function Card({ card, movies, buttonType }) {
             </div>
           );
         })}
-        <div className="gallery__addition">
+      </section>
+      <div>
+      <div className="gallery__addition">
           <button
             type="button"
             className={`gallery__addition_more ${
@@ -106,7 +108,7 @@ function Card({ card, movies, buttonType }) {
             Ёще
           </button>
         </div>
-      </section>
+      </div>
     </>
   );
 }
