@@ -8,14 +8,14 @@ export default function Register({ setLoggedIn }) {
   const { values, errors, isValid, isInputValid, handleChange } = useFormValidation()
   const navigate = useNavigate()
 
-  function onRegister(event) {
+  function onLogin (event) {
     event.preventDefault()
     navigate('/signin')
     setLoggedIn(true)
   }
 
   return (
-    <RegistrationForm name='signup' onSubmit={onRegister} isValid={isValid}>
+    <RegistrationForm name='signup' onSubmit={onLogin} isValid={isValid}>
       <p className="form__name">Имя</p>
       <Input
         name='name'

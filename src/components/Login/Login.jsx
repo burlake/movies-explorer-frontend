@@ -5,16 +5,16 @@ import "./login.css"
 import { Navigate } from 'react-router-dom';
 
 
-export default function Login({ setLoggedIn, title }) {
+export default function Login({ name, setLoggedIn, title }) {
   const { values, errors, isValid, isInputValid, handleChange, } = useFormValidation()
-  
+
   function onLogin(evt) {
     evt.preventDefault()
-    setLoggedIn (true)
     Navigate ('/movies')
+    setLoggedIn (true)
   }
 
-    
+
   return (
     <RegistrationForm name='signin' onSubmit={onLogin} isValid={isValid}>
       <div className="login_container">

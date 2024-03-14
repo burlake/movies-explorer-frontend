@@ -51,10 +51,10 @@ function Main({ name, setLoggedIn }) {
               <Landing />
             </>
           ),
-          signin: <Login setLoggedIn={setLoggedIn} />,
-          signup: <Register setLoggedIn={setLoggedIn} />,
+          signin: <Login name={name} setLoggedIn={setLoggedIn} />,
+          signup: <Register name={name} setLoggedIn={setLoggedIn} />,
           error: <Error />,
-          profile: <Profile setLoggedIn={setLoggedIn} />,
+          profile: <Profile  name={name} setLoggedIn={setLoggedIn} />,
           movies: (
             <>
               <Search
