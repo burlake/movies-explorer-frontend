@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function Register({ setLoggedIn }) {
   const { values, errors, isValid, isInputValid, handleChange } = useFormValidation()
   const navigate = useNavigate()
+  const error = "Что-то пошло не так..."
 
   function onLogin (event) {
     event.preventDefault()
@@ -52,7 +53,7 @@ export default function Register({ setLoggedIn }) {
         error={errors.password}
         autocomplete="current-password"
       />
-      <p className="popup__error">Что-то пошло не так...</p>
+      <p className="popup__error">{error}</p>
     </RegistrationForm>
   )
 }

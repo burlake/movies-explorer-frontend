@@ -6,7 +6,7 @@ function useFormValidation () {
     const [isValid, setIsValid] = useState(false)
     const [isInputValid, setIsInputValid] = useState({})
 
-    
+
 
     function handleChange (event) {
         const name = event.target.name

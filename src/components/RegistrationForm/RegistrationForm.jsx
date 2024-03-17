@@ -22,13 +22,13 @@ export default function RegistrationForm({ name, children, isValid, onSubmit, ti
         isValid={isValid}
         onSubmit={onSubmit}
       />
-          
+
       {name === 'signup' ?
           <p className='login__subtitle'>Уже зарегистрированы? <Link to={'/signin'} className='login__subtitle-link'>Войти</Link></p>
           : name === 'signin' ?
           <p className='login__subtitle'>Ещё не зарегистрированы? <Link to={'/signup'} className='login__subtitle-link'>Регистрация</Link></p>
-          : 
-          <Link to={'/'}>Выйти из аккаунта</Link>
+          :
+          <Link to={'/'} >Выйти из аккаунта</Link>
       }
     </section>
   )

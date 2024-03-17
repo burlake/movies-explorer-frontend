@@ -24,8 +24,8 @@ export default function Input({ name, type, title, placeholder, minLength, maxLe
         disabled={isSend}
         autoComplete="current-password"
       />
-      {/* <span className={
-        `${name === 'password' || name === 'email' ? 'login__error' : 'popup__error'}`}>{error}</span> - включить при ошибках */}
+      <span className={
+        `${name === 'password' || name === 'email' ? 'login__error' : 'popup__error'}`}>{error}</span>
     </>
   )
 }

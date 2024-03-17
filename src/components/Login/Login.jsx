@@ -10,13 +10,14 @@ export default function Login({ name, setLoggedIn, title }) {
 
   function onLogin(evt) {
     evt.preventDefault()
-    Navigate ('/movies')
     setLoggedIn (true)
+    Navigate ('/movies')
+
   }
 
 
   return (
-    <RegistrationForm name='signin' onSubmit={onLogin} isValid={isValid}>
+    <RegistrationForm name ={name} onSubmit={onLogin} isValid={isValid}>
       <div className="login_container">
       <p className="form__name">E-mail</p>
         <Input

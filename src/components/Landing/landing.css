@@ -373,7 +373,7 @@ margin: 0 auto;
 .page__technologies {
   width: (1280-70-70)px;
   padding: 100px 70px;
-  background-color: #272727; 
+  background-color: #272727;
 }
 
 @media screen and (max-width: 1023px) {
@@ -523,7 +523,7 @@ margin: 0 auto;
   padding: 110px 0 101px;
   width: (1280-70-70)px;
   padding: 100px 70px;
-  background-color:#202020; 
+  background-color:#202020;
 }
 
 @media screen and (max-width: 1023px) {
@@ -755,7 +755,7 @@ margin: 0 auto;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 1140px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1220px) {
