@@ -4,10 +4,10 @@ import Input from "../Input/Input";
 import { useNavigate } from "react-router-dom";
 
 
-export default function Register({ setLoggedIn }) {
+export default function Register({ setLoggedIn, error  }) {
   const { values, errors, isValid, isInputValid, handleChange } = useFormValidation()
   const navigate = useNavigate()
-  const error = "Что-то пошло не так..."
+  const error = "Что-то пошло не так"
 
   function onLogin (event) {
     event.preventDefault()

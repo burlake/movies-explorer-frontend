@@ -1,9 +1,9 @@
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 //import './Form.css'
 import SendContext from '../../contexts/SendContext'
 import "./form.css"
 
-export default function Form({ name, titleButton, children, isValid, onSubmit }) {
+function Form ({ name, titleButton, children, isValid, onSubmit }) {
   const isSend = useContext(SendContext)
 
   return (
@@ -23,3 +23,4 @@ export default function Form({ name, titleButton, children, isValid, onSubmit })
     </form>
   )
 }
+export default Form;
