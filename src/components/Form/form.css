@@ -3,7 +3,7 @@
     display: grid;
     grid-template-rows: 37px;
 }
-  
+
   @media screen and (max-width: 620px) {
     .form {
       max-width: 238px;
@@ -34,17 +34,17 @@
     box-sizing: border-box;
     position: relative;
     background: transparent;
-  
+
   }
-  
+
   .form__subtitle:active{
     border-bottom:1px solid  #4285F4;
   }
-  
+
   .form__subtitle.form__subtitle__invalid {
     border-bottom: 1px solid #FF0000;
   }
-  
+
   .form__name{
     font-style: normal;
     font-weight: 500;
@@ -58,21 +58,21 @@
   .form__name:last-of-type{
     margin-top: 25px;
   }
-  
-  
+
+
   .search__container {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
   }
-  
+
   .search__container:last-of-type {
     border-bottom: none;
   }
-  
-  
-  
+
+
+
   .exit_button{
     padding: 0;
     border: none;
@@ -82,7 +82,7 @@
     position: relative;
     top:100px;
   }
-  
+
 
   .form__button {
     padding: 0;
@@ -100,7 +100,7 @@
     color: #ffffff;
     cursor: pointer;
   }
-  
+
   @media screen and (max-width: 323px) {
     .form__button {
       margin-top: 15px;
@@ -110,13 +110,13 @@
       line-height: 17px;
     }
   }
-  
+
   .form__button:hover {
     opacity: 0.8;
     transition: opacity linear 0.5s;
   }
-  
-  
+
+
   /* .form__button_disabled {
     background: #000000;
     border: 1px solid #00000016;
@@ -125,7 +125,7 @@
     opacity: 0.2;
     cursor: not-allowed;
   } */
-  
+
   @media (max-width: 650px) {
     .form__button {
       font-weight: 400;
@@ -133,6 +133,5 @@
       line-height: 17px;
     }
   }
-  
-  
-  
+
+

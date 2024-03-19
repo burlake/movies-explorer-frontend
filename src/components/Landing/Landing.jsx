@@ -11,7 +11,7 @@ function Main() {
       setCount(0);
       window.removeEventListener("resize", closeBurgerForResize);
     }
-  }, []);
+  }, [setCount]);
 
   return (
     <>

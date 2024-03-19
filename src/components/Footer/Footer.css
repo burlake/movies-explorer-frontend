@@ -17,6 +17,12 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .page__footer {
+    padding-top: 92px;
+  }
+}
+
 .footer__title {
   margin: 0 0 20px 0;
   font-weight: 400;

@@ -13,7 +13,7 @@
   transition-property: opacity, visibility;
   transition-duration: 1s, 0s;
   transition-delay: 0s, 1s;
-  
+
 }
 
 .popup_type_tooltip {
@@ -190,7 +190,7 @@
 }
 
 .popup__error {
-  display: block;
+  /* display: block; */
   color: #FF0000;
   font-weight: 400;
   font-size: 12px;
@@ -238,7 +238,7 @@
   width: auto;
   height: auto;
   background: none;
-}  
+}
 
 .popup__close-button {
   position: absolute;

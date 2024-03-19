@@ -27,11 +27,11 @@
 }
 
 .search__container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 @media screen and (max-width: 525px) {
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 323px) {
   .search__container {
-    padding-bottom: 28px;
+    padding-bottom: 26px;
   }
 }
 
@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 323px) {
   .search__submit {
-    margin: 4px 7px 0px 0px;
+    margin: 6px 3px 0px 0px;
     font-size: 14px;
     height: 42px;
     line-height: normal;
@@ -210,7 +210,7 @@
   }
 
   .search__check-text {
-    padding-top: 3px;
+    padding-top: 1px;
     margin-left: 15px;
     font-size: 13px;
     font-weight: 400;

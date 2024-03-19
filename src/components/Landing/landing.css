@@ -86,7 +86,7 @@ margin: 0 auto;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
-    margin: 0 0 36px 0;
+    margin: 0 0 22px 0;
   }
 }
 
@@ -103,7 +103,7 @@ margin: 0 auto;
 @media screen and (max-width:320px) {
   .about__title {
     width: 300px;
-    margin: 0 0 36px 0;
+    margin: -4px 0px 23px 10px;
   }
 }
 
@@ -191,6 +191,7 @@ margin: 0 auto;
   .about__main-illustration {
     height: 206px;
     width: 210px;
+    margin-left: 10px;
   }
 }
 
@@ -210,6 +211,15 @@ margin: 0 auto;
   .page__project {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page__project {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 
@@ -389,6 +399,15 @@ margin: 0 auto;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .page__technologies {
+    padding-top: 67px;
+    padding-bottom: 70px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 .technologies__title {
   margin: 0 0 90px 0;
   padding-bottom: 24px;
@@ -412,6 +431,12 @@ margin: 0 auto;
     margin-bottom: 60px;
     font-size: 18px;
     letter-spacing: -0.72px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .technologies__title {
+    margin-bottom: 56px;
   }
 }
 
@@ -539,6 +564,15 @@ margin: 0 auto;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .page__student {
+    padding-top: 60px;
+    padding-bottom: 57px;
+    padding-right: 18px;
+    padding-left: 14px;
+  }
+}
+
 .student__title {
   margin: 9px 0 66px 0;
   padding-bottom: 24px;
@@ -556,6 +590,13 @@ margin: 0 auto;
     padding-bottom: 28px;
     font-size: 18px;
     letter-spacing: -0.72px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .student__title {
+    margin-bottom: 56px;
+    padding-bottom: 25px;
   }
 }
 
@@ -578,6 +619,12 @@ margin: 0 auto;
     justify-content: center;
     grid-template-columns: minmax(284px, auto);
     row-gap: 38px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .student__container {
+    row-gap: 33px;
   }
 }
 
@@ -687,6 +734,13 @@ margin: 0 auto;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .student__image:first-of-type {
+    width: 292px;
+    height: 361px;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .student__link:hover {
     opacity: .7;
@@ -704,7 +758,7 @@ margin: 0 auto;
 
 @media screen and (max-width: 1023px) {
   .page__portfolio {
-    padding: 8px 70px 128.9px 50px;
+    padding: 8px 49px 128.9px 50px;
   }
 }
 
@@ -716,7 +770,7 @@ margin: 0 auto;
 
 @media screen and (max-width: 323px) {
   .page__portfolio {
-    padding: 0px;
+    padding: 14px;
   }
 }
 
@@ -783,6 +837,12 @@ margin: 0 auto;
 
 }
 
+@media screen and (max-width: 1023px) {
+  .portfolio__link {
+    letter-spacing: -2.2px;
+  }
+}
+
 @media screen and (max-width: 323px) {
   .portfolio__link {
     padding-bottom: 19px;
@@ -792,14 +852,16 @@ margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 320px) {
   .portfolio__link {
-    padding-bottom: 19px;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -2.2px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    letter-spacing: -0.8px;
+    margin-bottom: 22px;
   }
 }
+
+
 
 .portfolio__arrow{
   width: 29px;
@@ -812,6 +874,14 @@ margin: 0 auto;
   background-position: 4px 18px;
   background-size: 20px 18px;
   transition: opacity .3s linear;
+}
+
+@media screen and (max-width: 320px) {
+  .portfolio__arrow {
+    background-position: 15px 4px;
+    background-size: 10px 18px;
+    height: 46px;
+  }
 }
 
 .portfolio__layout{

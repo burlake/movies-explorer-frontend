@@ -16,15 +16,15 @@
   .page__header {
     padding-left: 14px;
     padding-right: 12px;
-  } 
-}  
+  }
+}
 
 @media screen and (max-width:320px) {
   .page__header {
-    padding-left: 28px;
-    padding-right: 8px;
-  } 
-}  
+    padding-left: 14px;
+    padding-right: 0px;
+  }
+}
 
 
 .page__header_type_page {
@@ -38,6 +38,12 @@
   height: 38px;
   background-image: url('../../images/logo.svg');
   transition: opacity .3s linear;
+}
+
+@media screen and (max-width:320px) {
+  .header__link-home {
+    margin-left: 14px;
+  }
 }
 
 .header__links-container {
@@ -124,9 +130,10 @@
 }
 
 .header__links-container_type_page {
-  padding-top: 24px;
+  padding-top: 21px;
   display: flex;
   justify-content: flex-end;
+  padding-left: 2px;
 }
 
 @media screen and (max-width: 768px) {

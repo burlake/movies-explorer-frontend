@@ -2,16 +2,17 @@ import RegistrationForm from '../RegistrationForm/RegistrationForm'
 import useFormValidation from '../../utils/useFormValidation'
 import Input from "../Input/Input";
 import "./login.css"
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Login({ name, setLoggedIn, title }) {
   const { values, errors, isValid, isInputValid, handleChange, } = useFormValidation()
+  const navigate = useNavigate()
 
   function onLogin(evt) {
     evt.preventDefault()
     setLoggedIn (true)
-    Navigate ('/movies')
+    navigate ('/movies')
 
   }
 

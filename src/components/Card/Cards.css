@@ -1,6 +1,6 @@
 .gallery {
   margin: 0 auto;
-  padding: 73px 0 71px 0;
+  padding: 73px 0 65px 0;
   max-width: 1140px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, max-content));
@@ -13,8 +13,16 @@
 
 @media screen and (max-width: 1280px) {
   .gallery {
-    grid-row-gap: 40px;
+    grid-row-gap: 29px;
 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-left: 0px;
+    grid-row-gap: 38px;
+    grid-column-gap: 6px;
   }
 }
 
@@ -29,7 +37,7 @@
 @media screen and (max-width: 320px) {
   .gallery {
     max-width: 282px;
-    grid-row-gap: 18px;
+    grid-row-gap: 5px;
     padding: 38px 0 0 0;
     width: 300px;
     /* height: 168px; */
@@ -62,7 +70,7 @@
 
 .card__container {
   position: relative;
-  padding: 25px 20px 18px 21px;
+  padding: 23px 20px 18px 16px;
   border-radius: 0 0 10px 10px;
   display: flex;
   justify-content: space-between;
@@ -70,7 +78,7 @@
 
 @media screen and (max-width: 769px) {
   .card__container {
-    padding: 25px 20px 18px 0px;
+    padding-left: 21px;
   }
 }
 
@@ -117,6 +125,7 @@
 
 .card__like {
   margin: 18px 0 0;
+  margin-bottom: 16px;
   padding: 0;
   box-sizing: border-box;
   outline: none;
@@ -144,12 +153,13 @@
   }
 }
 
+
 @media screen and (max-width: 620px) {
   .card__like {
-    margin: 7px auto 0;
+    margin: 13px auto 0;
+    margin-bottom: 13px;
   }
 }
-
 
 
 
@@ -220,8 +230,7 @@
 .gallery__addition_more {
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 27px;
-  margin-top: 34px;
+  margin-bottom: 99px;
   width: 1140px;
   height: 36px;
   border-radius: 6px;
@@ -245,12 +254,12 @@
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 768px) {
   .gallery__addition_more {
-    width: 300px;
-    /* margin-left: 32px;
-    margin-top: 50px;
-    margin-bottom: 88px; */
+    width: 92%;
+    margin-left: 30px;
+    margin-top: 16px;
+    margin-bottom: 159px;
   }
 }
 
@@ -258,6 +267,12 @@
   .gallery__addition_more {
     width: 300px;
     margin: 78px 0px 78px 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gallery__addition_more {
+    margin-bottom: 68px;
   }
 }
 
