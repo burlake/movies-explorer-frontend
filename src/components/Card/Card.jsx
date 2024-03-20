@@ -49,7 +49,7 @@ function Card({ card, movies, buttonType }) {
                 <img
                   className="card__img"
                   src={data.image}
-                  alt="Иллюстрация."
+                  alt={`Иллюстрация фильма с названием " ${data.name}"`}
                 />
               </Link>
               <button

@@ -40,16 +40,16 @@
     /* This inherits all CSS values including `overflow` */
     all: inherit;
     }
-    
+
   .page__login {
     max-width: 396px;
     width: 100%;
     padding-top: 70px;
     margin: 0 auto;
     margin-bottom: 70px;
- 
+
   }
-  
+
   @media screen and (max-width: 768px) {
     .page__login {
       padding-top: 232px;
@@ -66,7 +66,7 @@
   }
 
   /* .page__header {
-    
+
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
@@ -75,14 +75,14 @@
     transition: padding-top .2s linear;
     flex-direction: row;
   }
-  
+
   @media screen and (max-width: 767px) {
     .page__header {
       width: 100%;
       padding-top: 28px;
     }
   }
-  
+
   .page__header_opened {
     padding-top: 169px;
   } */
@@ -92,9 +92,12 @@
     min-width: 320px;
     max-width: 1280px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
   }
 
-/* 
+/*
   * {
     margin: 0;
     padding: 0;
@@ -118,7 +121,7 @@
     }
   } */
 
-/* 
+/*
   * {
     margin: 0;
     padding: 0;

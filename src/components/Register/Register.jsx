@@ -28,6 +28,7 @@ export default function Register({ setLoggedIn }) {
         isInputValid={isInputValid.name}
         error={errors.name}
         minLength = '2'
+        maxLength = '20'
         autocomplete="username"
       />
       <p className="form__name">Email</p>

@@ -43,9 +43,9 @@ margin: 0 auto;
 
 @media screen and (max-width:1226px) {
   .about__container {
-    margin-left: 0;
+    margin: auto;
+    padding-left: 0px;
     place-items: center;
-    padding-left: 64px;
     width: calc(680/768*100%);
     grid-template-areas:
     "D D D D"
@@ -57,7 +57,7 @@ margin: 0 auto;
 
 @media screen and (max-width:767px) {
   .about__container {
-    margin-left: 0px;
+
     padding-left: 0px;
   }
 }
@@ -102,8 +102,8 @@ margin: 0 auto;
 
 @media screen and (max-width:320px) {
   .about__title {
-    width: 300px;
-    margin: -4px 0px 23px 10px;
+    width: 284px;
+    margin: -4px 0px 23px 0px;
   }
 }
 
@@ -155,19 +155,20 @@ margin: 0 auto;
   line-height: 16px;
   background-color: transparent;
 
-  grid-area: C;
-}
 
-@media (hover: hover) and (pointer: fine) {
-  .about__link:hover {
-    opacity: .7;
-    cursor: pointer;
-  }
+  grid-area: C;
 }
 
 .about__link:hover {
   opacity: .5;
-  transition: 1s linear 0.5s;
+  transition: linear 0.3s;
+  cursor: pointer;
+}
+
+.portfolio__link:hover {
+  opacity: .5;
+  transition: linear 0.3s;
+  cursor: pointer;
 }
 
 .about__main-illustration {
@@ -191,7 +192,6 @@ margin: 0 auto;
   .about__main-illustration {
     height: 206px;
     width: 210px;
-    margin-left: 10px;
   }
 }
 

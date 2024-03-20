@@ -126,6 +126,30 @@
         color: #4285F4;
       }
 
+      .login__subtitle-link:hover {
+        opacity: .5;
+        transition: linear 0.3s;
+        cursor: pointer;
+      }
+
+      .search__check-container:hover {
+        opacity: .5;
+        transition: linear 0.3s;
+        cursor: pointer;
+      }
+
+      .gallery__addition_more:hover {
+        opacity: .5;
+        transition: linear 0.3s;
+        cursor: pointer;
+      }
+
+      .header__logo_form:hover {
+        opacity: .5;
+        transition: linear 0.3s;
+        cursor: pointer;
+      }
+
       .login__title {
         min-height: 28px;
         margin: 37px 0 38px;
@@ -142,4 +166,16 @@
           margin-top: 47px;
           text-align: center;
         }
+      }
+
+
+
+      .login__input:focus {
+        border-bottom: 1px solid #4285F4;
+        outline: none;
+      }
+
+      .profile__settings:focus {
+        border-bottom: 1px solid #4285F4;
+        outline: none;
       }
