@@ -188,7 +188,8 @@ margin: 0 auto;
   }
 }
 
-@media screen and (max-width:320px) {
+
+@media screen and (max-width:350px) {
   .about__main-illustration {
     height: 206px;
     width: 210px;
