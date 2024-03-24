@@ -3,6 +3,8 @@
   padding: 59px 70px 0;
   display: flex;
   flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 40px 40px 0px 0px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -40,7 +42,6 @@
 
 .footer__container {
   padding: 20px 0;
-  border-top: 1px solid #424242;
   display: flex;
   justify-content: space-between;
 }
@@ -56,6 +57,7 @@
 
 .footer__links {
   display: flex;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -73,7 +75,7 @@
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.9px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 @media screen and (max-width: 767px) {
@@ -88,8 +90,14 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #000000;
   transition: opacity .3s linear;
+}
+
+.footer__link:hover{
+  opacity: .7;
+  cursor: pointer;
+  color: #FFA542;
 }
 
 @media screen and (max-width: 767px) {
@@ -115,4 +123,71 @@
     opacity: .7;
     cursor: pointer;
   }
+}
+
+.footer__earth{
+  display: block;
+  width: 21px;
+  height: 30px;
+  background-image: url('../../images/earth.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+}
+
+.footer__earth:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.footer__vk{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/vk.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+}
+
+.footer__vk:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.footer__telegram{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/telegram.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+}
+
+.footer__telegram:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.footer__whatsapp{
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/whatsapp.svg');
+  transition: opacity .3s linear;
+  background-repeat: no-repeat;
+}
+
+.footer__whatsapp:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.footer__links_1{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.footer__links_2{
+  display: flex;
+  flex-direction: row;
 }

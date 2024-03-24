@@ -1,44 +1,32 @@
 import "./Main.css";
-import Landing from "../Landing/Landing";
-import Login from "../Login/Login";
-import Register from "../Register/Register";
 import Error from "../Error - 404/Error";
-import SearchForm from "../Search/Search";
-import { movies, savedMovies } from "../../utils/constants";
+import { headphones, wirelessHeadphones, savedHeadphones } from "../../utils/constants";
 import { useEffect, useState } from "react";
-import Search from "../Search/Search";
-import Card from "../Card/Card";
-import Profile from "../Profile/Profile";
+import Headphones from "../Headphones/Headphones";
+import WirelessHeadphones from "../WirelessHeadphones/WirelessHeadphones";
+import Basket from "../Basket/Basket";
 
 function Main({ name, setLoggedIn }) {
-  const [moviesAll, setMoviesAll] = useState([]);
-  const [saveMovie, setSaveMovie] = useState([]);
-  const [isCheckMoviesAll, setIsCheckMoviesAll] = useState(true);
-  const [isCheckMoviesSave, setIsCheckMoviesSave] = useState(true);
+  const [headphonesAll, setHeadphonesAll] = useState([]);
+  const [wirelessHeadphonesAll, setWirelessHeadphonesAll] = useState([]);
+  const [saveHeadphones, setSaveHeadphones] = useState([]);
+  const [isCheckHeadphonesAll, setIsCheckHeadphonesAll] = useState(true);
+  const [isCheckHeadphonesSave, setIsCheckHeadphonesSave] = useState(true);
 
   useEffect(() => {
-    setMoviesAll(movies);
-    setSaveMovie(savedMovies);
+    setHeadphonesAll(headphones);
+    setWirelessHeadphonesAll(wirelessHeadphones);
+    setSaveHeadphones(savedHeadphones);
   }, []);
 
-  function onCheckMoviesAll() {
-    if (isCheckMoviesAll) {
-      setIsCheckMoviesAll(false);
+  function onCheckHeadphonesAll() {
+    if (isCheckHeadphonesAll) {
+      setIsCheckHeadphonesAll(false);
 
-      setMoviesAll(moviesAll.filter((element) => element.duration <= 40));
+      setHeadphonesAll(headphonesAll.filter((element) => element.price <= 40));
     } else {
-      setIsCheckMoviesAll(true);
-      setMoviesAll(movies);
-    }
-  }
-
-  function onCheckMoviesSave() {
-    if (isCheckMoviesSave) {
-      setIsCheckMoviesSave(false);
-      setSaveMovie(saveMovie.filter((element) => element.duration <= 40));
-    } else {
-      setIsCheckMoviesSave(true);
-      setSaveMovie(savedMovies);
+      setIsCheckHeadphonesAll(true);
+      setHeadphonesAll(headphones);
     }
   }
 
@@ -46,31 +34,17 @@ function Main({ name, setLoggedIn }) {
     <main className="main">
       {
         {
+          error: <Error />,
           homepage: (
             <>
-              <Landing />
-            </>
-          ),
-          signin: <Login name={name} setLoggedIn={setLoggedIn} />,
-          signup: <Register setLoggedIn={setLoggedIn} />,
-          error: <Error />,
-          profile: <Profile setLoggedIn={setLoggedIn} />,
-          movies: (
-            <>
-              <Search
-                isCheck={isCheckMoviesAll}
-                changeShot={onCheckMoviesAll}
-              />
-              <Card movies={moviesAll} />
+              <Headphones headphones={headphonesAll} />
+              <WirelessHeadphones wirelessHeadphones={wirelessHeadphonesAll} />
             </>
           ),
           savedmovies: (
             <>
-              <SearchForm
-                isCheck={isCheckMoviesSave}
-                changeShot={onCheckMoviesSave}
-              />
-              <Card movies={saveMovie} />
+              {/* <Headphones headphones={saveHeadphones} /> */}
+              <Basket headphones={saveHeadphones} />
             </>
           ),
         }[name]
